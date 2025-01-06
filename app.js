@@ -10,3 +10,11 @@ window.addEventListener('scroll', function () {
 	}
 	return
 })
+
+// Make dropdown-icon smooth scroll to about section on click
+const dropdownIcon = document.getElementById('dropdown-icon')
+const targetSection = document.getElementById('about')
+
+dropdownIcon.addEventListener('click', function () {
+	targetSection.scrollIntoView({ behavior: 'smooth' })
+})

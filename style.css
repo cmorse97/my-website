@@ -22,6 +22,7 @@ h1 {
 #main-navbar.scrolled {
 	background-color: var(--primary-color);
 	transition: background-color 500ms linear;
+	color: var(--seconday-color);
 }
 
 #main-navbar .navbar-brand {
@@ -38,4 +39,50 @@ h1 {
 
 #main-navbar .nav-link:hover {
 	color: var(--seconday-color);
+}
+
+#hero {
+	background-image: url('img/orange-topo.jpg');
+	background-color: rgb(0, 0, 0, 0.5);
+	background-blend-mode: overlay;
+	background-size: cover;
+	height: 80vh;
+}
+
+#hero h1 {
+	text-transform: uppercase;
+	font-size: 5rem;
+}
+
+#hero h2 {
+	font-weight: 300;
+	letter-spacing: 0.5rem;
+}
+
+@media (max-width: 768px) {
+	#hero {
+		height: 80vh;
+	}
+
+	#hero h1 {
+		font-size: 4rem;
+	}
+
+	#hero h2 {
+		font-size: 1.25rem;
+	}
+}
+
+@media (max-width: 576px) {
+	#hero {
+		height: 100vh;
+	}
+
+	#hero h1 {
+		font-size: 3rem;
+	}
+
+	#hero h2 {
+		font-size: 1rem;
+	}
 }
