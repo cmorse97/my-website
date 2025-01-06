@@ -1,8 +1,16 @@
+:root {
+	--primary-color: #fe8511;
+	--seconday-color: #2a2a2a;
+	--font-color: #f3f3f3;
+}
+
 body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Open Sans', sans-serif;
 	height: 100vh;
+	background-color: var(--seconday-color);
+	color: var(--font-color);
 }
 
 h1 {
@@ -11,6 +19,23 @@ h1 {
 	font-size: 4rem;
 }
 
-#main-navbar .scrolled {
-	background-color: orange;
+#main-navbar.scrolled {
+	background-color: var(--primary-color);
+	transition: background-color 500ms linear;
+}
+
+#main-navbar .navbar-brand {
+	font-size: 1.5rem;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+#main-navbar .nav-link {
+	color: var(--font-color);
+	font-size: 1.2rem;
+	font-weight: 300;
+}
+
+#main-navbar .nav-link:hover {
+	color: var(--seconday-color);
 }
