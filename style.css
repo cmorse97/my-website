@@ -1,0 +1,16 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	height: 100vh;
+}
+
+h1 {
+	text-align: center;
+	font-weight: 300;
+	font-size: 4rem;
+}
+
+#main-navbar .scrolled {
+	background-color: orange;
+}
