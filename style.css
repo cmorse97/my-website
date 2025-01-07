@@ -35,9 +35,15 @@ h1 {
 	color: var(--font-color);
 	font-size: 1.2rem;
 	font-weight: 300;
+	transition: all 0.3s ease;
 }
 
-#main-navbar .nav-link:hover {
+#navbar-links .nav-link:hover {
+	color: var(--primary-color);
+	transform: translateY(-1.5px) scale(1.05);
+}
+
+#main-navbar.scrolled .nav-link:hover {
 	color: var(--seconday-color);
 }
 
@@ -57,6 +63,26 @@ h1 {
 #hero h2 {
 	font-weight: 300;
 	letter-spacing: 0.5rem;
+}
+
+#hero .social-links span {
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+#hero .social-links span:hover {
+	color: var(--primary-color);
+	transform: translateY(-1px) scale(1.05);
+}
+
+#dropdown-icon {
+	color: var(--font-color);
+	transition: all 0.3s ease;
+}
+
+#dropdown-icon:hover {
+	color: var(--primary-color);
+	transform: translateY(-1px) scale(1.05);
 }
 
 #scroll-target {
@@ -98,11 +124,14 @@ h1 {
 	transform: translateY(-1px) scale(1.05);
 }
 
-@media (max-width: 768px) {
-	#hero {
-		height: 80vh;
+@media (max-width: 992px) {
+	#navbar-links .nav-link:hover {
+		color: var(--primary-color);
+		transform: translateY(-1.5px);
 	}
+}
 
+@media (max-width: 768px) {
 	#hero h1 {
 		font-size: 4rem;
 	}
@@ -113,10 +142,6 @@ h1 {
 }
 
 @media (max-width: 576px) {
-	#hero {
-		height: 100vh;
-	}
-
 	#hero h1 {
 		font-size: 3rem;
 	}
