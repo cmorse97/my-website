@@ -29,6 +29,32 @@ h1 {
 	font-size: 1.5rem;
 	font-weight: 300;
 	text-transform: uppercase;
+	transition: all 0.3s ease;
+}
+
+#main-navbar .navbar-brand:hover {
+	color: var(--seconday-color);
+	transform: translateY(-1.5px);
+}
+
+#main-navbar .navbar-toggler {
+	background: var(--primary-color);
+	border: none;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+	outline: none;
+	box-shadow: none;
+}
+
+#main-navbar .navbar-toggler:hover {
+	transform: scale(1.05);
+}
+
+#main-navbar .navbar-toggler-icon {
+	color: var(--primary-color);
 }
 
 #main-navbar .nav-link {
