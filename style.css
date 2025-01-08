@@ -158,14 +158,25 @@ h1 {
 }
 
 #about .contact-content a:hover {
-	box-shadow: 0 1px 5px 0.1rem var(--primary-color);
-	transform: translateY(-1px) scale(1.05);
+	box-shadow: 0 0 5px 0.1rem var(--primary-color);
+	transform: translateY(-0.5px) scale(1.025);
+}
+
+#projects .row {
+	margin-bottom: 6rem;
 }
 
 #projects .card {
 	background-color: var(--seconday-color);
 	border: 1px solid var(--primary-color);
 	color: var(--font-color);
+	height: 600px;
+}
+
+#projects .card span {
+	font-weight: 300;
+	font-size: 1.05rem;
+	margin: 0 2px;
 }
 
 #projects .card a {
@@ -175,8 +186,8 @@ h1 {
 }
 
 #projects .card a:hover {
-	box-shadow: 0 1px 5px 0.1rem var(--primary-color);
-	transform: translateY(-1px) scale(1.05);
+	box-shadow: 0 0 5px 0.1rem var(--primary-color);
+	transform: translateY(-0.5px) scale(1.025);
 }
 
 #skills .skill-item img {
