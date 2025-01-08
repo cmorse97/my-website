@@ -168,6 +168,17 @@ h1 {
 	color: var(--font-color);
 }
 
+#projects .card a {
+	color: var(--primary-color);
+	border-color: var(--primary-color);
+	transition: all 0.3s ease;
+}
+
+#projects .card a:hover {
+	box-shadow: 0 1px 5px 0.1rem var(--primary-color);
+	transform: translateY(-1px) scale(1.05);
+}
+
 @media (max-width: 992px) {
 	#navbar-links .nav-link:hover {
 		color: var(--primary-color);
