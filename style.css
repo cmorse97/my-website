@@ -179,6 +179,12 @@ h1 {
 	transform: translateY(-1px) scale(1.05);
 }
 
+#skills .skill-item img {
+	width: 100px;
+	height: 100px;
+	margin-bottom: 1rem;
+}
+
 @media (max-width: 992px) {
 	#navbar-links .nav-link:hover {
 		color: var(--primary-color);
