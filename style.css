@@ -2,12 +2,6 @@
 	--primary-color: #fe8511;
 	--seconday-color: #2a2a2a;
 	--font-color: #f3f3f3;
-	/* --border-section-color: linear-gradient(
-		to right,
-		var(--seconday-color),
-		var(--primary-color),
-		var(--seconday-color)
-	); */
 }
 
 body {
@@ -97,12 +91,13 @@ h1 {
 	letter-spacing: 0.5rem;
 }
 
-#hero .social-links span {
+#hero .social-links a {
+	color: var(--font-color);
 	cursor: pointer;
 	transition: all 0.3s ease;
 }
 
-#hero .social-links span:hover {
+#hero .social-links a:hover {
 	color: var(--primary-color);
 	transform: translateY(-1px) scale(1.05);
 }
@@ -193,6 +188,36 @@ h1 {
 	width: 100px;
 	height: 100px;
 	margin-bottom: 1rem;
+}
+
+#contact input,
+textarea {
+	background-color: var(--seconday-color);
+	border: 1px solid var(--primary-color);
+	color: var(--font-color);
+}
+
+#contact button {
+	color: var(--primary-color);
+	border-color: var(--primary-color);
+	transition: all 0.3s ease;
+}
+
+#contact button:hover {
+	box-shadow: 0 0 5px 0.1rem var(--primary-color);
+	transform: translateY(-0.5px) scale(1.025);
+}
+
+#footer a {
+	text-decoration: none;
+	font-size: 1.25rem;
+	color: var(--font-color);
+	transition: all 0.3s ease;
+}
+
+#footer a:hover {
+	color: var(--primary-color);
+	transform: translateY(-1px) scale(1.05);
 }
 
 @media (max-width: 992px) {
