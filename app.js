@@ -30,3 +30,6 @@ window.addEventListener('scroll', function () {
 		brandName.classList.add('d-none')
 	}
 })
+
+const spanYear = document.getElementById('span-year')
+spanYear.textContent = new Date().getFullYear()
